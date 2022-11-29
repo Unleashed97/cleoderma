@@ -1,0 +1,72 @@
+// normalize css
+@import 'vendor/normalize.scss';
+
+// vars
+@import 'vars.scss';
+
+// fonts
+@import 'fonts.scss';
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $family;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+// wrapper
+.wrapper {
+    padding: 30px 0 43px;
+
+    display: grid;
+    grid-template-columns: 262px 1fr;
+    gap: 26px;
+}
+
+.main {
+}
+
+// components
+@import 'components/header.scss';
+@import 'components/footer.scss';
+@import 'components/container.scss';
+@import 'components/header-banner.scss';
+@import 'components/btn.scss';
+@import 'components/form.scss';
+@import 'components/nav.scss';
+@import 'components/banner.scss';
+@import 'components/sidebar.scss';
+@import 'components/advantages.scss';
+@import 'components/review.scss';
+@import 'components/date.scss';
+@import 'components/card.scss';
+@import 'components/swiper.scss';
+@import 'components/section.scss';
+@import 'components/product.scss';
+@import 'components/socials.scss';

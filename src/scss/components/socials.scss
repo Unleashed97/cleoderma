@@ -1,0 +1,22 @@
+.socials {
+    display: flex;
+    gap: 10px;
+
+    &__item {
+        width: 35px;
+        height: 35px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: #fff;
+        border-radius: 50%;
+    }
+
+    &__link {
+        display: block;
+
+        color: #000;
+    }
+}

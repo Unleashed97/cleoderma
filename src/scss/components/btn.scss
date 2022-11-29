@@ -1,0 +1,16 @@
+.btn {
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: $family;
+
+    background: none;
+    border: 0;
+
+    &--pink {
+        background-color: #f19ab7;
+    }
+}

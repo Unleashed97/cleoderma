@@ -1,0 +1,31 @@
+.sidebar {
+    max-width: 262px;
+
+    &__banner {
+        width: 100%;
+        height: 375px;
+
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        &--1 {
+            margin-bottom: 20px;
+
+            background-image: url('../img/banner/banner-sidebar-1.jpg');
+        }
+
+        &--2 {
+            background-image: url('../img/banner/banner-sidebar-2.jpg');
+            margin-bottom: 28px;
+        }
+    }
+
+    &__nav {
+        margin-bottom: 40px;
+    }
+
+    &__advantages {
+        margin-bottom: 30px;
+    }
+}

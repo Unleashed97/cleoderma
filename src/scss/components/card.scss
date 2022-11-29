@@ -1,0 +1,95 @@
+.card {
+    &--date {
+        display: flex;
+        gap: 10px;
+
+        padding: 35px;
+
+        border: 1px solid #ebebeb;
+
+        .card__text-block {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card__title {
+            margin-bottom: 50px;
+
+            font-size: 14px;
+            line-height: 18px;
+            font-weight: 500;
+        }
+
+        .card__price {
+            margin-bottom: 17px;
+
+            font-size: 14px;
+        }
+
+        .card__btn {
+            padding: 12px 17px;
+
+            border-radius: 18px;
+        }
+    }
+
+    &--latest-products {
+        padding: 9px;
+
+        border: 1px solid #ebebeb;
+
+        .card__image {
+            margin-bottom: 20px;
+        }
+
+        .card__title {
+            margin-bottom: 11px;
+
+            font-size: 14px;
+            line-height: 18px;
+            font-weight: 500;
+        }
+
+        .card__price {
+            font-size: 14px;
+        }
+    }
+
+    &--sets {
+        .card__image {
+            margin-bottom: 20px;
+
+            border: 1px solid #ebebeb;
+        }
+
+        .card__title {
+            text-align: center;
+            font-size: 16px;
+            font-weight: 500;
+        }
+    }
+
+    &--featured-products {
+        padding: 25px 32px;
+
+        display: flex;
+        gap: 20px;
+
+        border: 1px solid #ebebeb;
+
+        .card__text-block {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card__title {
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .card__price {
+            font-size: 14px;
+        }
+    }
+}
