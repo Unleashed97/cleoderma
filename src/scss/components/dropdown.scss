@@ -1,0 +1,40 @@
+.dropdown {
+    position: relative;
+
+    &.active {
+        .dropdown__content {
+            display: block;
+        }
+
+        .dropdown__btn i {
+            transform: rotate(180deg);
+        }
+    }
+    &__btn {
+        color: #fff;
+
+        i {
+            transition: 0.3s linear;
+        }
+    }
+
+    &__content {
+        position: absolute;
+        top: 100%;
+        left: 0;
+
+        display: none;
+        padding: 10px;
+
+        min-width: 100%;
+
+        background-color: #15232d;
+        border-radius: 10px;
+        border: 1px solid #ebebeb;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+    }
+}

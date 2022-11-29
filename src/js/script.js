@@ -1,4 +1,5 @@
 import * as customFunctions from './modules/functions.js'
+customFunctions.handleDropdown()
 
 // vendors
 const swiperDiscount = new Swiper('.swiper--discount', {
