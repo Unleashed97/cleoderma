@@ -68,15 +68,48 @@
             width: 453px;
             height: 130px;
 
+            padding: 20px;
+            display: flex;
+            align-items: center;
+
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
 
             &--1 {
+                position: relative;
                 background-image: url('../img/banner/banner-main-1.jpg');
             }
             &--2 {
+                position: relative;
                 background-image: url('../img/banner/banner-main-2.jpg');
+
+                .banner__item-link {
+                    margin-left: auto;
+                }
+            }
+        }
+
+        .banner__item-link {
+            padding: 12px 25px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            text-transform: uppercase;
+            font-size: 35px;
+            color: #fff;
+            font-weight: 700;
+
+            border-radius: 3px;
+            border: 3px solid #fff;
+
+            &::after {
+                content: '';
+                position: absolute;
+                inset: 0;
+                z-index: 1;
             }
         }
     }
