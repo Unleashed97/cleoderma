@@ -1,9 +1,6 @@
 export const handleDropdown = () => {
     const dropdownList = document.querySelectorAll('.dropdown')
 
-    // dropdownBtnList.forEach(btn => btn.addEventListener('click', () => {
-
-    // }))
     window.addEventListener('click', ({ target }) => {
         const dropdown = target.closest('.dropdown')
         const dropdownContent = target.closest('.dropdown__content')
@@ -22,5 +19,36 @@ export const handleDropdown = () => {
             dropdown.classList.add('active')
             const dropdownBtn = dropdown.querySelector('.dropdown__btn')
         }
+    })
+}
+
+export const handleFooterAccordion = () => {
+    const colCaptionList = document.querySelectorAll('.footer__col-caption')
+
+    colCaptionList.forEach((caption) =>
+        caption.addEventListener('click', () => {
+            const col = caption.closest('.footer__col')
+            if (col.classList.contains('active')) {
+                col.classList.remove('active')
+                caption.classList.remove('active')
+            } else {
+                col.classList.add('active')
+                caption.classList.add('active')
+            }
+        }),
+    )
+}
+
+export const handleBurgerMenu = () => {
+    const burgerBtn = document.querySelector('.burger')
+    const nav = document.querySelector('.nav--header')
+    const navClose = nav.querySelector('.nav-close')
+
+    burgerBtn.addEventListener('click', () => {
+        nav.classList.add('active')
+    })
+
+    navClose.addEventListener('click', () => {
+        nav.classList.remove('active')
     })
 }

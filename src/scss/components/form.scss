@@ -13,6 +13,16 @@
             background: none;
             border-radius: 20px;
             border: 1px solid #fff;
+
+            @media (max-width: 768px) {
+                width: 200px;
+
+                padding-right: 45px;
+            }
+
+            @media (max-width: 576px) {
+                display: none;
+            }
         }
 
         .form__btn-search {
@@ -31,6 +41,14 @@
             color: #fff;
 
             border-left: 1px solid #fff;
+
+            @media (max-width: 768px) {
+                width: 40px;
+            }
+
+            @media (max-width: 576px) {
+                display: none;
+            }
         }
     }
 }

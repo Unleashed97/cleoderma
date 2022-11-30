@@ -13,10 +13,18 @@
     box-sizing: border-box;
 }
 
+html {
+    overflow: hidden;
+}
+
 body {
+    position: relative;
+
     font-family: $family;
     font-size: 16px;
     font-weight: 400;
+
+    overflow: hidden;
 }
 
 a {
@@ -45,11 +53,22 @@ p {
     padding: 30px 0 43px;
 
     display: grid;
-    grid-template-columns: 262px 1fr;
+    grid-template-columns: 262px minmax(0, 1fr);
     gap: 26px;
+
+    @media (max-width: 768px) {
+        grid-template-columns: minmax(0, 1fr);
+    }
 }
 
 .main {
+    max-width: 100%;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 // components
@@ -71,3 +90,4 @@ p {
 @import 'components/product.scss';
 @import 'components/socials.scss';
 @import 'components/dropdown.scss';
+@import 'components/burger.scss';

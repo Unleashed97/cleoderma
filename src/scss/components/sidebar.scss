@@ -1,6 +1,4 @@
 .sidebar {
-    max-width: 262px;
-
     &__banner {
         width: 100%;
         height: 375px;
@@ -8,6 +6,11 @@
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
+
+        @media (max-width: 768px) {
+            max-width: 300px;
+            margin: 0 auto;
+        }
 
         &--1 {
             margin-bottom: 20px;

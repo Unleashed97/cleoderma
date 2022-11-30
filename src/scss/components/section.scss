@@ -19,6 +19,7 @@
     }
 
     &__content {
-        max-width: 926px;
+        // max-width: 926px;
+        min-width: 0;
     }
 }

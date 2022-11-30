@@ -7,6 +7,11 @@
 
         border: 1px solid #ebebeb;
 
+        @media (max-width: 1200px) {
+            flex-direction: column;
+            align-items: center;
+        }
+
         .card__text-block {
             display: flex;
             flex-direction: column;
@@ -38,6 +43,12 @@
 
         border: 1px solid #ebebeb;
 
+        @media (max-width: 576px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
         .card__image {
             margin-bottom: 20px;
         }
@@ -56,6 +67,11 @@
     }
 
     &--sets {
+        @media (max-width: 576px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
         .card__image {
             margin-bottom: 20px;
 
@@ -76,6 +92,11 @@
         gap: 20px;
 
         border: 1px solid #ebebeb;
+
+        @media (max-width: 992px) {
+            flex-direction: column;
+            align-items: center;
+        }
 
         .card__text-block {
             display: flex;

@@ -64,8 +64,12 @@
 
         margin-bottom: 36px;
 
+        @media (max-width: 576px) {
+            flex-direction: column;
+        }
+
         .banner__item {
-            width: 453px;
+            width: 50%;
             height: 130px;
 
             padding: 20px;
@@ -75,6 +79,10 @@
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
+
+            @media (max-width: 576px) {
+                width: 100%;
+            }
 
             &--1 {
                 position: relative;
@@ -104,6 +112,10 @@
 
             border-radius: 3px;
             border: 3px solid #fff;
+
+            @media (max-width: 992px) {
+                font-size: 20px;
+            }
 
             &::after {
                 content: '';

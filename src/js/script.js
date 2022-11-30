@@ -1,5 +1,7 @@
 import * as customFunctions from './modules/functions.js'
 customFunctions.handleDropdown()
+customFunctions.handleFooterAccordion()
+customFunctions.handleBurgerMenu()
 
 // vendors
 const swiperDiscount = new Swiper('.swiper--discount', {
@@ -9,6 +11,27 @@ const swiperDiscount = new Swiper('.swiper--discount', {
 
     slidesPerView: 2,
     spaceBetween: 20,
+
+    breakpoints: {
+        1200: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+
+        576: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+        },
+    },
 
     navigation: {
         nextEl: '.swiper-button-next--discount',
@@ -22,6 +45,27 @@ const swiperLastestProducts = new Swiper('.swiper--latest-products', {
 
     slidesPerView: 4,
     spaceBetween: 20,
+
+    breakpoints: {
+        1200: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+        },
+        768: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+        },
+
+        576: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+        },
+    },
 
     navigation: {
         nextEl: '.swiper-button-next--latest-products',
@@ -37,6 +81,22 @@ const swiperSets = new Swiper('.swiper--sets', {
     slidesPerView: 5,
     spaceBetween: 20,
 
+    breakpoints: {
+        992: {
+            slidesPerView: 5,
+            spaceBetween: 20,
+        },
+        576: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+        },
+
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+        },
+    },
+
     navigation: {
         nextEl: '.swiper-button-next--sets',
         prevEl: '.swiper-button-prev--sets',
@@ -49,6 +109,27 @@ const swiperFeaturedProducts = new Swiper('.swiper--featured-products', {
 
     slidesPerView: 3,
     spaceBetween: 20,
+
+    breakpoints: {
+        1200: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+        },
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+
+        576: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+        },
+    },
 
     navigation: {
         nextEl: '.swiper-button-next--featured-products',

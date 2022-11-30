@@ -41,6 +41,9 @@
             </a>
 
             <nav class="nav nav--header">
+                <button type="button" class="btn nav-close">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
                 <ul class="nav__list">
                     <li class="nav__item">
                         <a href="#" class="nav__link">Sale</a>
@@ -97,6 +100,16 @@
                     <span class="cart__counter">2</span>
                 </a>
             </div>
+
+            <!-- burger -->
+            <button type="button" class="burger">
+                <span>Menu</span>
+                <span class="burger__icon">
+                    <span class="burger__icon-item"></span>
+                    <span class="burger__icon-item"></span>
+                    <span class="burger__icon-item"></span>
+                </span>
+            </button>
         </div>
     </div>
 </header>
@@ -268,9 +281,7 @@
                     </div>
                     <div class="section__content">
                         <div class="swiper swiper--discount">
-                            <!-- Additional required wrapper -->
                             <div class="swiper-wrapper">
-                                <!-- Slides -->
                                 <div class="swiper-slide">
                                     <article class="card card--date">
                                         <picture>
@@ -382,9 +393,7 @@
 
                     <div class="section__content">
                         <div class="swiper swiper--latest-products">
-                            <!-- Additional required wrapper -->
                             <div class="swiper-wrapper">
-                                <!-- Slides -->
                                 <div class="swiper-slide">
                                     <article class="card card--latest-products">
                                         <picture>
@@ -457,7 +466,7 @@
                     </div>
                 </section>
 
-                <!-- section sets -->
+
                 <section class="section section--sets">
                     <div class="section__header">
                         <h2 class="section__title">Sets</h2>
@@ -475,9 +484,7 @@
 
                     <div class="section__content">
                         <div class="swiper swiper--sets">
-                            <!-- Additional required wrapper -->
                             <div class="swiper-wrapper">
-                                <!-- Slides -->
                                 <div class="swiper-slide">
                                     <article class="card card--sets">
                                         <picture>
@@ -554,9 +561,7 @@
                     </div>
                     <div class="section__content">
                         <div class="swiper swiper--featured-products">
-                            <!-- Additional required wrapper -->
                             <div class="swiper-wrapper">
-                                <!-- Slides -->
                                 <div class="swiper-slide">
                                     <article class="card card--featured-products">
                                         <picture>
@@ -669,115 +674,126 @@
             <div class="footer__col footer__col--about">
                 <span class="footer__col-caption">Get in touch</span>
 
-                <address class="footer__address">
-                    <p class="footer__address-text">
-                        205-27, Gasan Digital 1-ro, Geumcheon -gu, Seoul, Republic of Korea, 15F
-                    </p>
+                <div class="footer__col-content">
 
-                    <a href="mailto:support@cleoderma.com" class="footer__address-mail">support@cleoderma.com</a>
-                </address>
+                    <address class="footer__address">
+                        <p class="footer__address-text">
+                            205-27, Gasan Digital 1-ro, Geumcheon -gu, Seoul, Republic of Korea, 15F
+                        </p>
 
-                <ul class="socials">
-                    <li class="socials__item">
-                        <a href="#" class="socials__link">
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </a>
-                    </li>
-                    <li class="socials__item">
-                        <a href="#" class="socials__link">
-                            <i class="fa-brands fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li class="socials__item">
-                        <a href="#" class="socials__link">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                    </li>
-                    <li class="socials__item">
-                        <a href="#" class="socials__link">
-                            <i class="fa-brands fa-google-plus-g"></i>
-                        </a>
-                    </li>
-                </ul>
+                        <a href="mailto:support@cleoderma.com" class="footer__address-mail">support@cleoderma.com</a>
+                    </address>
+
+                    <ul class="socials">
+                        <li class="socials__item">
+                            <a href="#" class="socials__link">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#" class="socials__link">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#" class="socials__link">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#" class="socials__link">
+                                <i class="fa-brands fa-google-plus-g"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
             </div>
 
             <div class="footer__col footer__col--account">
                 <span class="footer__col-caption">Account</span>
 
-                <ul class="footer__col-list">
-                    <li class="footer__col-list-item">
-                        <a href="#" class="footer__col-list-item-link">
-                            <i class="fa-solid fa-arrow-right-long"></i>
-                            Shopping cart
-                        </a>
-                    </li>
-                    <li class="footer__col-list-item">
-                        <a href="#" class="footer__col-list-item-link">
-                            <i class="fa-solid fa-arrow-right-long"></i>
-                            Wishlist
-                        </a>
-                    </li>
-                    <li class="footer__col-list-item">
-                        <a href="#" class="footer__col-list-item-link">
-                            <i class="fa-solid fa-arrow-right-long"></i>
-                            Account settings
-                        </a>
-                    </li>
-                    <li class="footer__col-list-item">
-                        <a href="#" class="footer__col-list-item-link">
-                            <i class="fa-solid fa-arrow-right-long"></i>
-                            Orders
-                        </a>
-                    </li>
-                </ul>
+                <div class="footer__col-content">
+                    <ul class="footer__col-list">
+                        <li class="footer__col-list-item">
+                            <a href="#" class="footer__col-list-item-link">
+                                <i class="fa-solid fa-arrow-right-long"></i>
+                                Shopping cart
+                            </a>
+                        </li>
+                        <li class="footer__col-list-item">
+                            <a href="#" class="footer__col-list-item-link">
+                                <i class="fa-solid fa-arrow-right-long"></i>
+                                Wishlist
+                            </a>
+                        </li>
+                        <li class="footer__col-list-item">
+                            <a href="#" class="footer__col-list-item-link">
+                                <i class="fa-solid fa-arrow-right-long"></i>
+                                Account settings
+                            </a>
+                        </li>
+                        <li class="footer__col-list-item">
+                            <a href="#" class="footer__col-list-item-link">
+                                <i class="fa-solid fa-arrow-right-long"></i>
+                                Orders
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
             </div>
 
             <div class="footer__col footer__col--account">
                 <span class="footer__col-caption">Information</span>
 
-                <ul class="footer__col-list">
-                    <li class="footer__col-list-item">
-                        <a href="#" class="footer__col-list-item-link">
-                            <i class="fa-solid fa-arrow-right-long"></i>
-                            Privacy & Policy
-                        </a>
-                    </li>
-                    <li class="footer__col-list-item">
-                        <a href="#" class="footer__col-list-item-link">
-                            <i class="fa-solid fa-arrow-right-long"></i>
-                            Terms of condition
-                        </a>
-                    </li>
-                    <li class="footer__col-list-item">
-                        <a href="#" class="footer__col-list-item-link">
-                            <i class="fa-solid fa-arrow-right-long"></i>
-                            F.A.Q.
-                        </a>
-                    </li>
-                    <li class="footer__col-list-item">
-                        <a href="#" class="footer__col-list-item-link">
-                            <i class="fa-solid fa-arrow-right-long"></i>
-                            Order Tracking
-                        </a>
-                    </li>
-                    <li class="footer__col-list-item">
-                        <a href="#" class="footer__col-list-item-link">
-                            <i class="fa-solid fa-arrow-right-long"></i>
-                            Contact us
-                        </a>
-                    </li>
-                </ul>
+                <div class="footer__col-content">
+                    <ul class="footer__col-list">
+                        <li class="footer__col-list-item">
+                            <a href="#" class="footer__col-list-item-link">
+                                <i class="fa-solid fa-arrow-right-long"></i>
+                                Privacy & Policy
+                            </a>
+                        </li>
+                        <li class="footer__col-list-item">
+                            <a href="#" class="footer__col-list-item-link">
+                                <i class="fa-solid fa-arrow-right-long"></i>
+                                Terms of condition
+                            </a>
+                        </li>
+                        <li class="footer__col-list-item">
+                            <a href="#" class="footer__col-list-item-link">
+                                <i class="fa-solid fa-arrow-right-long"></i>
+                                F.A.Q.
+                            </a>
+                        </li>
+                        <li class="footer__col-list-item">
+                            <a href="#" class="footer__col-list-item-link">
+                                <i class="fa-solid fa-arrow-right-long"></i>
+                                Order Tracking
+                            </a>
+                        </li>
+                        <li class="footer__col-list-item">
+                            <a href="#" class="footer__col-list-item-link">
+                                <i class="fa-solid fa-arrow-right-long"></i>
+                                Contact us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="footer__col footer__col--account">
                 <span class="footer__col-caption">#Instagram</span>
 
-                <div class="inst-grid">
-                    <img src="https://via.placeholder.com/75x75" alt="">
-                    <img src="https://via.placeholder.com/75x75" alt="">
-                    <img src="https://via.placeholder.com/75x75" alt="">
-                    <img src="https://via.placeholder.com/75x75" alt="">
-                    <img src="https://via.placeholder.com/75x75" alt="">
-                    <img src="https://via.placeholder.com/75x75" alt="">
+                <div class="footer__col-content">
+                    <div class="inst-grid">
+                        <img src="https://via.placeholder.com/75x75" alt="">
+                        <img src="https://via.placeholder.com/75x75" alt="">
+                        <img src="https://via.placeholder.com/75x75" alt="">
+                        <img src="https://via.placeholder.com/75x75" alt="">
+                        <img src="https://via.placeholder.com/75x75" alt="">
+                        <img src="https://via.placeholder.com/75x75" alt="">
+                    </div>
                 </div>
             </div>
         </div>
@@ -794,7 +810,6 @@
     </div>
 
 </footer>
-    </div>
 
     <!-- scripts -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>

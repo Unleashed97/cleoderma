@@ -1,16 +1,22 @@
 .header {
     background-color: #15232d;
     color: #fff;
+    overflow: hidden;
 
     &__top {
         width: 100%;
-        height: 40px;
+        padding: 10px 0;
 
         display: flex;
         justify-content: space-between;
         align-items: center;
 
         border-bottom: 1px solid #fff;
+
+        @media (max-width: 576px) {
+            flex-direction: column;
+            gap: 10px;
+        }
     }
 
     &__bottom {
@@ -18,10 +24,18 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        @media (max-width: 576px) {
+            padding: 10px 0;
+        }
     }
 
     &__logo {
         margin-right: 72px;
+
+        @media (max-width: 576px) {
+            margin-right: 10px;
+        }
     }
 
     &__controls {
@@ -41,7 +55,7 @@
     &__controls-item.cart .cart__counter {
         position: absolute;
         bottom: -4px;
-        right: -19px;
+        right: -15px;
 
         width: 17px;
         height: 17px;
