@@ -7,10 +7,10 @@
             position: absolute;
             top: 0;
             right: 0;
+            bottom: 0;
             z-index: 100;
 
             width: 250px;
-            height: 100vh;
 
             transform: translateX(110%);
 
@@ -28,6 +28,7 @@
 
             .nav__list {
                 flex-direction: column;
+                margin: 0 auto;
             }
 
             .dropdown__btn {
@@ -35,6 +36,7 @@
             }
 
             .dropdown__content {
+                position: static;
                 color: #fff;
             }
 
