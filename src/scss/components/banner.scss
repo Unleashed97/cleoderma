@@ -12,6 +12,10 @@
     background-repeat: no-repeat;
     background-position: center;
 
+    &--main {
+        padding: 0 15px;
+    }
+
     &__block {
         width: 375px;
         height: 240px;
@@ -20,6 +24,11 @@
 
         background-color: rgba(#15232d, 0.85);
         border-radius: 10px;
+
+        @media (max-width: 576px) {
+            width: 100%;
+            height: auto;
+        }
     }
 
     &__block-inner {
