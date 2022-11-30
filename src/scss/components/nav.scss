@@ -3,6 +3,13 @@
         .nav-close {
             display: none;
         }
+
+        .nav__list {
+            display: flex;
+            align-items: center;
+            gap: 42px;
+        }
+
         @media (max-width: 1440px) {
             position: absolute;
             top: 0;
@@ -14,7 +21,7 @@
 
             transform: translateX(110%);
 
-            padding: 30px 15px;
+            padding: 50px 15px;
 
             background-color: #fff;
 
@@ -28,7 +35,7 @@
 
             .nav__list {
                 flex-direction: column;
-                margin: 0 auto;
+                align-items: flex-start;
             }
 
             .dropdown__btn {
@@ -49,12 +56,6 @@
                 display: block;
                 font-size: 20px;
             }
-        }
-
-        .nav__list {
-            display: flex;
-            align-items: center;
-            gap: 42px;
         }
     }
 

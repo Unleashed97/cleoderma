@@ -46,11 +46,9 @@ export const handleBurgerMenu = () => {
 
     burgerBtn.addEventListener('click', () => {
         nav.classList.add('active')
-        document.body.classList.add('fixed')
     })
 
     navClose.addEventListener('click', () => {
         nav.classList.remove('active')
-        document.body.classList.remove('fixed')
     })
 }
