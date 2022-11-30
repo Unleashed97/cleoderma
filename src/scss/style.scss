@@ -59,6 +59,12 @@ p {
     @media (max-width: 768px) {
         grid-template-columns: minmax(0, 1fr);
     }
+
+    &--shop {
+        @media (max-width: 992px) {
+            grid-template-columns: minmax(0, 1fr);
+        }
+    }
 }
 
 .main {
@@ -91,3 +97,5 @@ img {
 @import 'components/socials.scss';
 @import 'components/dropdown.scss';
 @import 'components/burger.scss';
+@import 'components/shop.scss';
+@import 'components/star-rating.scss';

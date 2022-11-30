@@ -1,17 +1,21 @@
-.btn {
-    padding: 0;
+// .btn {
+//     padding: 0;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
 
-    font-family: $family;
+//     font-family: $family;
 
-    background: none;
-    border: 0;
-    cursor: pointer;
+//     background: none;
+//     border: 0;
+//     cursor: pointer;
 
-    &--pink {
-        background-color: #f19ab7;
-    }
+//     &--pink {
+//         background-color: #f19ab7;
+//     }
+// }
+
+.btn--pink {
+    background-color: #f19ab7;
 }

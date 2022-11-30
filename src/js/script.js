@@ -2,6 +2,7 @@ import * as customFunctions from './modules/functions.js'
 customFunctions.handleDropdown()
 customFunctions.handleFooterAccordion()
 customFunctions.handleBurgerMenu()
+customFunctions.handleSidebarToggle()
 
 // vendors
 const swiperDiscount = new Swiper('.swiper--discount', {

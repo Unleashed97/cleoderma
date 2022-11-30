@@ -52,3 +52,17 @@ export const handleBurgerMenu = () => {
         nav.classList.remove('active')
     })
 }
+
+export const handleSidebarToggle = () => {
+    const filtersBtnOpen = document.querySelector('.sidebar-filters-open')
+    const filtersBtnClose = document.querySelector('.sidebar-filters-close')
+    const sidebarFilters = document.querySelector('.sidebar--shop')
+
+    filtersBtnOpen.addEventListener('click', () => {
+        sidebarFilters.classList.add('active')
+    })
+
+    filtersBtnClose.addEventListener('click', () => {
+        sidebarFilters.classList.remove('active')
+    })
+}
