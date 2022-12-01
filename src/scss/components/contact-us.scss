@@ -1,0 +1,51 @@
+.contact-us {
+    iframe {
+        width: 100%;
+        height: 500px;
+    }
+
+    .icon {
+        width: 60px;
+        height: 60px;
+
+        background-color: #5da68a;
+
+        i {
+            font-size: 25px;
+        }
+    }
+
+    .address-text {
+        color: #838383;
+
+        span {
+            font-size: 15px;
+        }
+
+        p {
+            font-size: 13px;
+        }
+    }
+
+    .form--contact-us {
+        .form__title {
+            color: #000;
+        }
+
+        .form-control {
+            background-color: #f5f5f5;
+            border: 1px solid #ededed;
+            font-size: 14px;
+            line-height: 22px;
+            padding: 8px 12px;
+        }
+
+        .form__submit {
+            width: 146px;
+            height: 35px;
+            font-size: 14px;
+
+            background-color: #8867b8;
+        }
+    }
+}
