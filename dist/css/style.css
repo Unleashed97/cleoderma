@@ -13197,7 +13197,6 @@ img {
 }
 
 .card-product {
-  position: relative;
   transition: 0.3s linear;
 }
 .card-product:hover .card__image.default {
@@ -13212,6 +13211,29 @@ img {
 }
 .card-product:hover .card__btn {
   display: block;
+}
+
+.card-product-wrapper.col-12 .card__description {
+  display: block;
+}
+.card-product-wrapper.col-12 .card-product {
+  display: flex;
+  flex-direction: row;
+  gap: 30px !important;
+}
+@media (max-width: 768px) {
+  .card-product-wrapper.col-12 .card-product {
+    flex-direction: column;
+  }
+}
+.card-product-wrapper.col-12 .card__image-block {
+  min-width: 30%;
+}
+.card-product-wrapper.col-12 .card-body {
+  padding: 0;
+}
+.card-product-wrapper.col-12 .card__price {
+  margin-bottom: 10px;
 }
 
 .card__image-block {
@@ -13258,6 +13280,11 @@ img {
 }
 .card__hover-controls .btn:hover i {
   color: #fff;
+}
+
+.card__description {
+  display: none;
+  margin-bottom: 20px;
 }
 
 .card__btn {

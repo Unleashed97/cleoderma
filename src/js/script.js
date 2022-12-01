@@ -6,6 +6,7 @@ customFunctions.handleSidebarToggle()
 customFunctions.handleQuantity()
 customFunctions.handleFormSubmit()
 customFunctions.handleRatingSelectable()
+customFunctions.handleShopLayout()
 
 import Swiper, { Navigation, Thumbs, FreeMode } from 'swiper'
 

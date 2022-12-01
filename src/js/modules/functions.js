@@ -127,3 +127,27 @@ export const handleRatingSelectable = () => {
         )
     }
 }
+
+export const handleShopLayout = () => {
+    const gridBtn = document.querySelector('.shop__controls-btn.grid')
+    const listBtn = document.querySelector('.shop__controls-btn.list')
+
+    if (gridBtn && listBtn) {
+        const cardWrapperList = document.querySelectorAll(
+            '.card-product-wrapper',
+        )
+        gridBtn.addEventListener('click', () => {
+            // console.log(cardWrapperList)
+            cardWrapperList.forEach((cardWrapper) => {
+                cardWrapper.classList.remove('col-12')
+                cardWrapper.classList.add('col-6', 'col-sm-4', 'col-xl-3')
+            })
+        })
+        listBtn.addEventListener('click', () => {
+            cardWrapperList.forEach((cardWrapper) => {
+                cardWrapper.classList.remove('col-6', 'col-sm-4', 'col-xl-3')
+                cardWrapper.classList.add('col-12')
+            })
+        })
+    }
+}
