@@ -1,0 +1,38 @@
+.faqs {
+    .list-caption {
+        font-weight: 600;
+        font-size: 19px;
+    }
+    .list-item-link {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .section__title {
+        font-size: 20px;
+    }
+
+    .accordion__btn {
+        // padding-left: 20px;
+
+        color: #000;
+        background: none;
+
+        &.collapsed::before {
+            background-image: url('../img/icons/plus.svg');
+        }
+        &::after {
+            display: none;
+        }
+
+        &::before {
+            content: '';
+            width: 10px;
+            height: 10px;
+            background-image: url('../img/icons/minus.svg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-right: 15px;
+        }
+    }
+}
