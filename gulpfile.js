@@ -99,6 +99,7 @@ export const styles = () => {
         )
         .pipe(sass())
         .pipe(replace('../../', '../'))
+        .pipe(gulp.dest(path.dist.css))
         .pipe(rename({ suffix: '.min' }))
         .pipe(postcss([autoprefixer(), cssnano()]))
         .pipe(gulp.dest(path.dist.css))

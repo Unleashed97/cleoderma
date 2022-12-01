@@ -5,9 +5,13 @@ customFunctions.handleBurgerMenu()
 customFunctions.handleSidebarToggle()
 customFunctions.handleQuantity()
 customFunctions.handleFormSubmit()
+customFunctions.handleRatingSelectable()
+
+import Swiper, { Navigation, Thumbs, FreeMode } from 'swiper'
 
 // vendors
 const swiperDiscount = new Swiper('.swiper--discount', {
+    modules: [Navigation],
     // Optional parameters
     direction: 'horizontal',
     loop: true,
@@ -42,6 +46,7 @@ const swiperDiscount = new Swiper('.swiper--discount', {
     },
 })
 const swiperLastestProducts = new Swiper('.swiper--latest-products', {
+    modules: [Navigation],
     // Optional parameters
     direction: 'horizontal',
     loop: true,
@@ -77,6 +82,7 @@ const swiperLastestProducts = new Swiper('.swiper--latest-products', {
 })
 
 const swiperSets = new Swiper('.swiper--sets', {
+    modules: [Navigation],
     // Optional parameters
     direction: 'horizontal',
     loop: true,
@@ -106,6 +112,7 @@ const swiperSets = new Swiper('.swiper--sets', {
     },
 })
 const swiperFeaturedProducts = new Swiper('.swiper--featured-products', {
+    modules: [Navigation],
     // Optional parameters
     direction: 'horizontal',
     loop: true,
@@ -141,6 +148,7 @@ const swiperFeaturedProducts = new Swiper('.swiper--featured-products', {
 })
 
 var swiperGalleryThumbs = new Swiper('.swiper--gallery-thumbs', {
+    modules: [Navigation, FreeMode],
     loop: true,
     spaceBetween: 10,
     slidesPerView: 4,
@@ -153,6 +161,7 @@ var swiperGalleryThumbs = new Swiper('.swiper--gallery-thumbs', {
 })
 
 var swiperGalleryProduct = new Swiper('.swiper--gallery-product', {
+    modules: [Thumbs],
     loop: true,
     spaceBetween: 10,
 

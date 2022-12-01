@@ -104,3 +104,26 @@ export const handleFormSubmit = () => {
         )
     }
 }
+
+export const handleRatingSelectable = () => {
+    const ratingSelectable = document.querySelector('.star-rating--selectable')
+
+    if (ratingSelectable) {
+        const starList = ratingSelectable.querySelectorAll('.fa-star')
+
+        starList.forEach((star, index) =>
+            star.addEventListener('mouseover', () => {
+                starList.forEach((star) =>
+                    star.classList.remove('rating-color'),
+                )
+                const hoverStarsList = Array.from(starList).splice(0, index + 1)
+
+                console.log(hoverStarsList)
+
+                hoverStarsList.forEach((hoveredStar) =>
+                    hoveredStar.classList.add('rating-color'),
+                )
+            }),
+        )
+    }
+}
