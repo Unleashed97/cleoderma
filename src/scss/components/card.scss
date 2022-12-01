@@ -116,3 +116,105 @@
         }
     }
 }
+
+.card-product {
+    position: relative;
+    transition: 0.3s linear;
+
+    &:hover {
+        .card__image.default {
+            opacity: 0;
+        }
+
+        .card__image.hover {
+            opacity: 1;
+        }
+
+        .card__hover-controls {
+            opacity: 1;
+            transform: translate(0);
+        }
+
+        .card__inner {
+        }
+
+        .card__btn {
+            display: block;
+        }
+    }
+}
+
+.card__inner {
+    // margin-bottom: -50px;
+}
+
+.card__image-block {
+    position: relative;
+}
+.card__image {
+    transition: 0.3s linear;
+    &.default {
+        opacity: 1;
+    }
+
+    &.hover {
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+}
+
+.card__title {
+    font-size: 14px;
+}
+
+.card__hover-controls {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 2;
+    opacity: 0;
+    transform: translate(10px);
+
+    transition: 0.3s linear;
+    .btn {
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+
+        background-color: #f0f0f0;
+
+        transition: 0.3s linear;
+
+        &:hover {
+            background-color: #8867b8;
+
+            i {
+                color: #fff;
+            }
+        }
+    }
+}
+
+// .btn-wrapper {
+//     position: absolute;
+//     bottom: 0;
+//     left: 0;
+//     right: 0;
+//     z-index: 1;
+
+//     background-color: #fff;
+// }
+
+.card__btn {
+    background-color: #8867b8;
+
+    transition: background-color 0.3s linear;
+
+    &:hover {
+        background-color: lighten(#8867b8, 10%);
+    }
+}

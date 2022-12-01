@@ -51,4 +51,38 @@
             }
         }
     }
+
+    &--product-main-add-to-cart {
+        .form__submit {
+            padding: 10 20px;
+            font-size: 14px;
+            height: 38px;
+
+            background-color: #8867b8;
+
+            transition: 0.3s linear;
+
+            &:hover {
+                background-color: lighten(#8867b8, 10%);
+            }
+        }
+    }
+
+    &--review {
+        .form__textarea,
+        .form__input {
+            background-color: #f0f0f0;
+        }
+
+        .form__submit {
+            padding: 10px 20px;
+            background-color: #8867b8;
+
+            transition: 0.3s linear;
+
+            &:hover {
+                background-color: lighten(#8867b8, 10%);
+            }
+        }
+    }
 }

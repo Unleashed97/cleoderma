@@ -74,3 +74,33 @@ export const handleSidebarToggle = () => {
         })
     }
 }
+
+export const handleQuantity = () => {
+    const quantityBtnAdd = document.querySelector('.quantity__btn--add')
+    const quantityBtnRemove = document.querySelector('.quantity__btn--remove')
+    const quantityValue = document.querySelector('.quantity__value')
+
+    if (quantityBtnAdd && quantityBtnRemove && quantityValue) {
+        quantityBtnAdd.addEventListener('click', () => {
+            quantityValue.value = Number(quantityValue.value) + 1
+        })
+        quantityBtnRemove.addEventListener('click', () => {
+            quantityValue.value =
+                Number(quantityValue.value) <= 1
+                    ? 1
+                    : Number(quantityValue.value) - 1
+        })
+    }
+}
+
+export const handleFormSubmit = () => {
+    const formList = document.querySelectorAll('.form')
+
+    if (formList) {
+        formList.forEach((form) =>
+            form.addEventListener('submit', (e) => {
+                e.preventDefault()
+            }),
+        )
+    }
+}

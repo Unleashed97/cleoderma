@@ -1,0 +1,55 @@
+.tabs {
+    &__nav-block {
+        width: 20%;
+
+        @media (max-width: 768px) {
+            width: 100%;
+        }
+    }
+
+    &__content {
+        width: 80%;
+        padding: 30px 34px;
+
+        color: #838383;
+
+        @media (max-width: 768px) {
+            width: 100%;
+        }
+
+        a {
+            color: #000;
+
+            &:hover {
+                text-decoration: underline;
+                color: blue;
+            }
+        }
+    }
+
+    &__btn {
+        width: 100%;
+        height: 51px;
+
+        padding: 14px 22px;
+        font-size: 15px;
+        font-weight: 500;
+
+        text-align: left;
+
+        border: 1px solid #ededed;
+        border-radius: 0;
+        transition: 0.3s linear;
+
+        &.active,
+        &:hover {
+            color: #838383;
+            background-color: #f0f0f0;
+            border: 1px solid #ededed;
+        }
+
+        @media (max-width: 768px) {
+            text-align: center;
+        }
+    }
+}

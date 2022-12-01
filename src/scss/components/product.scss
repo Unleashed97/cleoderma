@@ -61,4 +61,32 @@
         color: #fff;
         font-size: 2em;
     }
+
+    // product page
+
+    &__info {
+        position: relative;
+    }
+
+    &__switch {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+    }
+
+    &__switch-previous,
+    &__switch-next {
+        font-size: 13px;
+        color: #c7c7c7;
+    }
+
+    &__gallery {
+        border: 1px solid #f7f2ed;
+    }
+
+    &__gallery-thumbs-wrapper {
+        position: relative;
+        padding: 0 45px;
+    }
 }

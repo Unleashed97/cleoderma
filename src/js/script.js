@@ -3,6 +3,8 @@ customFunctions.handleDropdown()
 customFunctions.handleFooterAccordion()
 customFunctions.handleBurgerMenu()
 customFunctions.handleSidebarToggle()
+customFunctions.handleQuantity()
+customFunctions.handleFormSubmit()
 
 // vendors
 const swiperDiscount = new Swiper('.swiper--discount', {
@@ -135,5 +137,26 @@ const swiperFeaturedProducts = new Swiper('.swiper--featured-products', {
     navigation: {
         nextEl: '.swiper-button-next--featured-products',
         prevEl: '.swiper-button-prev--featured-products',
+    },
+})
+
+var swiperGalleryThumbs = new Swiper('.swiper--gallery-thumbs', {
+    loop: true,
+    spaceBetween: 10,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesProgress: true,
+    navigation: {
+        nextEl: '.swiper-button-next--gallery-thumbs',
+        prevEl: '.swiper-button-prev--gallery-thumbs',
+    },
+})
+
+var swiperGalleryProduct = new Swiper('.swiper--gallery-product', {
+    loop: true,
+    spaceBetween: 10,
+
+    thumbs: {
+        swiper: swiperGalleryThumbs,
     },
 })

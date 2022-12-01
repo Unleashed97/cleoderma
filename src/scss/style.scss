@@ -21,7 +21,7 @@ body {
     position: relative;
 
     font-family: $family;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
 
     overflow-x: hidden;
@@ -101,3 +101,5 @@ img {
 @import 'components/star-rating.scss';
 @import 'components/contact-us.scss';
 @import 'components/faqs.scss';
+@import 'components/quantity.scss';
+@import 'components/tabs.scss';
