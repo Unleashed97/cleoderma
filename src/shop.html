@@ -129,17 +129,17 @@
                         Filters
                     </button>
                     <div class="container mb-5">
-                        <div class="row align-items-center gy-3">
-                            <div class="col d-flex col-sm-12">
+                        <div class="row d-flex align-items-center gy-3">
+                            <div class="col-12 d-flex col-sm-6">
                                 <span class="shop__controls d-flex">
-                                    <button class="btn shop__controls-btn grid"></button>
+                                    <button class="btn shop__controls-btn grid active"></button>
                                     <button class="btn shop__controls-btn list"></button>
                                 </span>
                                 <span class="shop__result-count ms-4">
                                     Showing 1–16 of 20 results</span>
                             </div>
 
-                            <div class="col col-sm-12 d-flex justify-content-end ms-auto">
+                            <div class="col-12 col-sm-6 d-flex justify-content-end ms-auto">
                                 <form action="/" class="form">
                                     <select class="form-select sort" aria-label="Default select example">
                                         <option selected>Default sorting</option>
@@ -158,13 +158,15 @@
                         <div class="container p-0">
                             <div class="row gy-4">
                                 <div class="col-6 col-sm-4 col-xl-3 card-product-wrapper">
-                                    <a href="#" class="card p-2 pb-3 card-product">
+                                    <div class="card p-2 pb-3 card-product">
                                         <div class="card__image-block">
-                                            <img width="300" height="300" class="card__image default"
-                                                src="https://i0.wp.com/cleoderma.com/wp-content/uploads/2022/01/07.jpg?resize=300%2C300&amp;ssl=1">
-                                            <img class="card__image hover"
-                                                src="https://cleoderma.com/wp-content/uploads/2022/01/08.jpg" alt="">
-
+                                            <a href="#" class="card__link">
+                                                <img width="300" height="300" class="card__image default"
+                                                    src="https://i0.wp.com/cleoderma.com/wp-content/uploads/2022/01/07.jpg?resize=300%2C300&amp;ssl=1">
+                                                <img class="card__image hover"
+                                                    src="https://cleoderma.com/wp-content/uploads/2022/01/08.jpg"
+                                                    alt="">
+                                            </a>
                                             <div class="card__hover-controls d-flex flex-column gap-2">
                                                 <button type="button"
                                                     class="btn d-flex justify-content-center align-items-center quick-view">
@@ -181,40 +183,46 @@
                                             </div>
                                         </div>
                                         <div class="card__inner">
-                                            <div class="card-body">
-                                                <h5 class="card-title card__title">Auis Nostrum Ullamb Velit Esse</h5>
-                                                <div class="star-rating mb-2">
-                                                    <i class="fa fa-star rating-color"></i>
-                                                    <i class="fa fa-star rating-color"></i>
-                                                    <i class="fa fa-star rating-color"></i>
-                                                    <i class="fa fa-star rating-color"></i>
-                                                    <i class="fa fa-star"></i>
+                                            <a href="#">
+                                                <div class="card-body">
+                                                    <h5 class="card-title card__title">Auis Nostrum Ullamb Velit Esse
+                                                    </h5>
+                                                    <div class="star-rating mb-2">
+                                                        <i class="fa fa-star rating-color"></i>
+                                                        <i class="fa fa-star rating-color"></i>
+                                                        <i class="fa fa-star rating-color"></i>
+                                                        <i class="fa fa-star rating-color"></i>
+                                                        <i class="fa fa-star"></i>
+                                                    </div>
+                                                    <p class="card-text card__price">$300.00</p>
                                                 </div>
-                                                <p class="card-text card__price">$300.00</p>
-                                            </div>
 
-                                            <p class="card__description">
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                                                commodo consequat.
-                                            </p>
+                                                <p class="card__description">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                    eiusmod
+                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                                                    commodo consequat.
+                                                </p>
+                                            </a>
 
                                             <button type="button"
                                                 class="btn w-80 rounded-5 text-white card__btn add-to-cart">
                                                 Add To Cart
                                             </button>
                                         </div>
-                                    </a>
+                                    </div>
                                 </div>
                                 <div class="col-6 col-sm-4 col-xl-3 card-product-wrapper">
-                                    <a href="#" class="card p-2 pb-3 card-product">
+                                    <div class="card p-2 pb-3 card-product">
                                         <div class="card__image-block">
-                                            <img width="300" height="300" class="card__image default"
-                                                src="https://i0.wp.com/cleoderma.com/wp-content/uploads/2022/01/07.jpg?resize=300%2C300&amp;ssl=1">
-                                            <img class="card__image hover"
-                                                src="https://cleoderma.com/wp-content/uploads/2022/01/08.jpg" alt="">
-
+                                            <a href="#" class="card__link">
+                                                <img width="300" height="300" class="card__image default"
+                                                    src="https://i0.wp.com/cleoderma.com/wp-content/uploads/2022/01/07.jpg?resize=300%2C300&amp;ssl=1">
+                                                <img class="card__image hover"
+                                                    src="https://cleoderma.com/wp-content/uploads/2022/01/08.jpg"
+                                                    alt="">
+                                            </a>
                                             <div class="card__hover-controls d-flex flex-column gap-2">
                                                 <button type="button"
                                                     class="btn d-flex justify-content-center align-items-center quick-view">
@@ -231,40 +239,46 @@
                                             </div>
                                         </div>
                                         <div class="card__inner">
-                                            <div class="card-body">
-                                                <h5 class="card-title card__title">Auis Nostrum Ullamb Velit Esse</h5>
-                                                <div class="star-rating mb-2">
-                                                    <i class="fa fa-star rating-color"></i>
-                                                    <i class="fa fa-star rating-color"></i>
-                                                    <i class="fa fa-star rating-color"></i>
-                                                    <i class="fa fa-star rating-color"></i>
-                                                    <i class="fa fa-star"></i>
+                                            <a href="#">
+                                                <div class="card-body">
+                                                    <h5 class="card-title card__title">Auis Nostrum Ullamb Velit Esse
+                                                    </h5>
+                                                    <div class="star-rating mb-2">
+                                                        <i class="fa fa-star rating-color"></i>
+                                                        <i class="fa fa-star rating-color"></i>
+                                                        <i class="fa fa-star rating-color"></i>
+                                                        <i class="fa fa-star rating-color"></i>
+                                                        <i class="fa fa-star"></i>
+                                                    </div>
+                                                    <p class="card-text card__price">$300.00</p>
                                                 </div>
-                                                <p class="card-text card__price">$300.00</p>
-                                            </div>
 
-                                            <p class="card__description">
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                                                commodo consequat.
-                                            </p>
+                                                <p class="card__description">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                    eiusmod
+                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                                                    commodo consequat.
+                                                </p>
+                                            </a>
 
                                             <button type="button"
                                                 class="btn w-80 rounded-5 text-white card__btn add-to-cart">
                                                 Add To Cart
                                             </button>
                                         </div>
-                                    </a>
+                                    </div>
                                 </div>
                                 <div class="col-6 col-sm-4 col-xl-3 card-product-wrapper">
-                                    <a href="#" class="card p-2 pb-3 card-product">
+                                    <div class="card p-2 pb-3 card-product">
                                         <div class="card__image-block">
-                                            <img width="300" height="300" class="card__image default"
-                                                src="https://i0.wp.com/cleoderma.com/wp-content/uploads/2022/01/07.jpg?resize=300%2C300&amp;ssl=1">
-                                            <img class="card__image hover"
-                                                src="https://cleoderma.com/wp-content/uploads/2022/01/08.jpg" alt="">
-
+                                            <a href="#" class="card__link">
+                                                <img width="300" height="300" class="card__image default"
+                                                    src="https://i0.wp.com/cleoderma.com/wp-content/uploads/2022/01/07.jpg?resize=300%2C300&amp;ssl=1">
+                                                <img class="card__image hover"
+                                                    src="https://cleoderma.com/wp-content/uploads/2022/01/08.jpg"
+                                                    alt="">
+                                            </a>
                                             <div class="card__hover-controls d-flex flex-column gap-2">
                                                 <button type="button"
                                                     class="btn d-flex justify-content-center align-items-center quick-view">
@@ -281,40 +295,46 @@
                                             </div>
                                         </div>
                                         <div class="card__inner">
-                                            <div class="card-body">
-                                                <h5 class="card-title card__title">Auis Nostrum Ullamb Velit Esse</h5>
-                                                <div class="star-rating mb-2">
-                                                    <i class="fa fa-star rating-color"></i>
-                                                    <i class="fa fa-star rating-color"></i>
-                                                    <i class="fa fa-star rating-color"></i>
-                                                    <i class="fa fa-star rating-color"></i>
-                                                    <i class="fa fa-star"></i>
+                                            <a href="#">
+                                                <div class="card-body">
+                                                    <h5 class="card-title card__title">Auis Nostrum Ullamb Velit Esse
+                                                    </h5>
+                                                    <div class="star-rating mb-2">
+                                                        <i class="fa fa-star rating-color"></i>
+                                                        <i class="fa fa-star rating-color"></i>
+                                                        <i class="fa fa-star rating-color"></i>
+                                                        <i class="fa fa-star rating-color"></i>
+                                                        <i class="fa fa-star"></i>
+                                                    </div>
+                                                    <p class="card-text card__price">$300.00</p>
                                                 </div>
-                                                <p class="card-text card__price">$300.00</p>
-                                            </div>
 
-                                            <p class="card__description">
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                                                commodo consequat.
-                                            </p>
+                                                <p class="card__description">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                    eiusmod
+                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                                                    commodo consequat.
+                                                </p>
+                                            </a>
 
                                             <button type="button"
                                                 class="btn w-80 rounded-5 text-white card__btn add-to-cart">
                                                 Add To Cart
                                             </button>
                                         </div>
-                                    </a>
+                                    </div>
                                 </div>
                                 <div class="col-6 col-sm-4 col-xl-3 card-product-wrapper">
-                                    <a href="#" class="card p-2 pb-3 card-product">
+                                    <div class="card p-2 pb-3 card-product">
                                         <div class="card__image-block">
-                                            <img width="300" height="300" class="card__image default"
-                                                src="https://i0.wp.com/cleoderma.com/wp-content/uploads/2022/01/07.jpg?resize=300%2C300&amp;ssl=1">
-                                            <img class="card__image hover"
-                                                src="https://cleoderma.com/wp-content/uploads/2022/01/08.jpg" alt="">
-
+                                            <a href="#" class="card__link">
+                                                <img width="300" height="300" class="card__image default"
+                                                    src="https://i0.wp.com/cleoderma.com/wp-content/uploads/2022/01/07.jpg?resize=300%2C300&amp;ssl=1">
+                                                <img class="card__image hover"
+                                                    src="https://cleoderma.com/wp-content/uploads/2022/01/08.jpg"
+                                                    alt="">
+                                            </a>
                                             <div class="card__hover-controls d-flex flex-column gap-2">
                                                 <button type="button"
                                                     class="btn d-flex justify-content-center align-items-center quick-view">
@@ -331,31 +351,35 @@
                                             </div>
                                         </div>
                                         <div class="card__inner">
-                                            <div class="card-body">
-                                                <h5 class="card-title card__title">Auis Nostrum Ullamb Velit Esse</h5>
-                                                <div class="star-rating mb-2">
-                                                    <i class="fa fa-star rating-color"></i>
-                                                    <i class="fa fa-star rating-color"></i>
-                                                    <i class="fa fa-star rating-color"></i>
-                                                    <i class="fa fa-star rating-color"></i>
-                                                    <i class="fa fa-star"></i>
+                                            <a href="#">
+                                                <div class="card-body">
+                                                    <h5 class="card-title card__title">Auis Nostrum Ullamb Velit Esse
+                                                    </h5>
+                                                    <div class="star-rating mb-2">
+                                                        <i class="fa fa-star rating-color"></i>
+                                                        <i class="fa fa-star rating-color"></i>
+                                                        <i class="fa fa-star rating-color"></i>
+                                                        <i class="fa fa-star rating-color"></i>
+                                                        <i class="fa fa-star"></i>
+                                                    </div>
+                                                    <p class="card-text card__price">$300.00</p>
                                                 </div>
-                                                <p class="card-text card__price">$300.00</p>
-                                            </div>
 
-                                            <p class="card__description">
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                                                commodo consequat.
-                                            </p>
+                                                <p class="card__description">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                    eiusmod
+                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                                                    commodo consequat.
+                                                </p>
+                                            </a>
 
                                             <button type="button"
                                                 class="btn w-80 rounded-5 text-white card__btn add-to-cart">
                                                 Add To Cart
                                             </button>
                                         </div>
-                                    </a>
+                                    </div>
                                 </div>
 
                             </div>

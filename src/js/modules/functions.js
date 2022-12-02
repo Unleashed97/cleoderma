@@ -137,13 +137,18 @@ export const handleShopLayout = () => {
             '.card-product-wrapper',
         )
         gridBtn.addEventListener('click', () => {
-            // console.log(cardWrapperList)
+            listBtn.classList.remove('active')
+
+            gridBtn.classList.add('active')
             cardWrapperList.forEach((cardWrapper) => {
                 cardWrapper.classList.remove('col-12')
                 cardWrapper.classList.add('col-6', 'col-sm-4', 'col-xl-3')
             })
         })
         listBtn.addEventListener('click', () => {
+            gridBtn.classList.remove('active')
+
+            listBtn.classList.add('active')
             cardWrapperList.forEach((cardWrapper) => {
                 cardWrapper.classList.remove('col-6', 'col-sm-4', 'col-xl-3')
                 cardWrapper.classList.add('col-12')

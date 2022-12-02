@@ -6,20 +6,30 @@
 
     &__controls-btn {
         display: block;
-        width: 26px;
-        height: 26px;
+        width: 24px;
+        height: 24px;
     }
 
     .grid {
         background-image: url('../img/icons/shop-controls.png');
-        background-position: 4px -25px;
+        background-position: 2px 1px;
         background-repeat: no-repeat;
+        border: 0;
+
+        &.active {
+            background-position: 2px -27px;
+        }
     }
 
     .list {
         background-image: url('../img/icons/shop-controls.png');
-        background-position: -25px 5px;
+        background-position: -26px 1px;
         background-repeat: no-repeat;
+        border: 0;
+
+        &.active {
+            background-position: -26px -27px;
+        }
     }
 
     .sidebar-filters-open {
